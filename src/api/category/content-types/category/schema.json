@@ -43,6 +43,12 @@
       "relation": "oneToMany",
       "target": "api::product.product",
       "mappedBy": "category"
+    },
+    "field": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::field.field",
+      "inversedBy": "categories"
     }
   }
 }

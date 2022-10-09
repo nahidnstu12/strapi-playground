@@ -24,6 +24,12 @@
       "relation": "manyToOne",
       "target": "api::product.product",
       "inversedBy": "image_gallaries"
+    },
+    "fields": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::field.field",
+      "mappedBy": "image_gallaries"
     }
   }
 }
