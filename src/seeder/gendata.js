@@ -1,6 +1,6 @@
 const {faker} = require("@faker-js/faker");
 async function createGenData (strapi) {
-    for(let i = 0; i< 10; i++ ){
+    for(let i = 0; i< 4; i++ ){
         await strapi.entityService.create("api::gendata.gendata", {
           data: {
             title: faker.word.noun() + " " + faker.word.noun(),

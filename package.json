@@ -7,7 +7,8 @@
     "dev": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "seed": "SET FORCE_APP_BOOTSTRAP_ONLY=true&& strapi start"
   },
   "devDependencies": {
     "@faker-js/faker": "^7.6.0"
