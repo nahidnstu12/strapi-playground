@@ -3,6 +3,7 @@ const { uploadFile } = require("./helpers");
 const { join } = require("path");
 async function fakeCategoryData(strapi) {
     
+    console.log(join(__dirname, '../../public/uploads/site_logo_1a04d85e28.jpg'))
     const uploadedTodoMedia = await uploadFile(strapi, {
         data: {
           refId: Date.now().toString(),
